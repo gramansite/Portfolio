@@ -12,43 +12,78 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <title>Portfolio Muhamad Rizki</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-brand-md navbar-dark bg-primary shadow">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#" style="border-bottom: 3px dotted aquamarine; margin-left: 60px; position: absolute; margin-top: -8px; font-size: 27px; font-weight: 300; font-family: Montserrat"
+            ><span class="nama">MUHAMAD RIZKI</span></a
+          >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <form class="d-flex pencari">
+          <input class="form-control me-2" type="search" required oninvalid="this.setCustomValidity('Isi dulu sob, biar ketemu')" oninput="setCustomValidity('')" placeholder="Kepoin Disini" aria-label="Search" />
+          <button class="btn btn-outline-success btn-dark" type="submit">Search</button>
+        </form>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#">Projects</a>
             </li>
+            <!-- Example single danger button -->
+            <button type="button" id="tombol" class="btn btn-info dropdown-toggle" style="width: 90px" data-bs-toggle="dropdown" aria-expanded="false">My Blog</button>
+            <ul class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0); border: none; width: 200px; border-radius: 7px; border-bottom: 2px solid aquamarine">
+              <li><a id="bayangan" class="dropdown-item" href="https://murizd.blogspot.com/" style="border-radius: 10px; color: white; font-size: 15px">Muriz Blog - General</a></li>
+              <li><a id="bayangan" class="dropdown-item" href="https://gramansite.blogspot.com/" style="border-radius: 10px; color: white; font-size: 15px">GramanSite - Web</a></li>
+              <li><a id="bayangan" class="dropdown-item" href="https://toko.ly/murizcustom/home?isSeller=true" style="border-radius: 10px; color: white; font-size: 15px">My Shop</a></li>
+            </ul>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" required oninvalid="this.setCustomValidity('Isi dulu sob, biar ketemu')" oninput="setCustomValidity('')" placeholder="Kepoin Disini" aria-label="Search" />
-            <button class="btn btn-outline-success btn-dark" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
     <!-- Akhir Navbar -->
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+      <img src="img/full_fotoooo.png" alt="Muhamad Rizki" title="Rizki" width="150" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4 murizzz" style="transition: all 0.6s ease; cursor: default">MUHAMAD RIZKI</h1>
+      <p class="lead">Student | Blogger | Dropshipper</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0099ff"
+          fill-opacity="1"
+          d="M0,96L40,90.7C80,82,160,75,240,96C320,117,400,171,480,160C560,149,640,75,720,64C800,53,880,107,960,154.7C1040,203,1120,245,1200,245.3C1280,245,1360,203,1400,181.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Jumbotron -->
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">About Me</div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem accusamus, impedit fugiat alias tempore, delectus qui veniam deleniti placeat, eum nobis in quod inventore itaque porro corrupti ipsum aliquid quo?</p>
+          </div>
+          <div class="col">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptas impedit quam voluptatum autem! Perferendis libero tenetur omnis nesciunt delectus, fugiat atque dolores quos doloribus. Recusandae, eum ipsum? Libero
+              autem tempore sapiente. Assumenda magni voluptas, praesentium illum rerum asperiores ullam atque magnam, vero placeat cupiditate molestiae similique ipsum explicabo sit!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir About -->
   </body>
 </html>
