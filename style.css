@@ -1,0 +1,31 @@
+@media (max-width: 790px) {
+  .pencari {
+    visibility: hidden;
+  }
+}
+@media (max-width: 321px) {
+  .nama {
+    font-size: 25px;
+  }
+}
+#bayangan:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#tombol {
+  background-color: rgba(0, 255, 254, 0.2);
+}
+#tombol:hover {
+  background-color: aqua;
+}
+/* Jumbotron */
+.jumbotron {
+  padding: 2rem 0;
+  background-color: #e2edff;
+}
+body {
+  min-height: 2000px;
+}
+.murizzz:hover {
+  min-width: 1023px;
+  box-shadow: 0 45px 0 280px aqua;
+}
