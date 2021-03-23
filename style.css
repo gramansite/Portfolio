@@ -19,13 +19,18 @@
 }
 /* Jumbotron */
 .jumbotron {
-  padding: 2rem 0;
+  padding-top: 2rem;
   background-color: #e2edff;
 }
-body {
-  min-height: 2000px;
+#murizzz:hover {
+  box-shadow: 300px 45px 300px 9px aqua;
 }
-.murizzz:hover {
-  min-width: 1023px;
-  box-shadow: 0 45px 0 280px aqua;
+#projects {
+  background-color: #e2edff;
+}
+#blog {
+  background-color: #e2edff;
+}
+section {
+  padding-top: 5rem;
 }
