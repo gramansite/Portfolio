@@ -6,9 +6,27 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 990px) {
+  .utama-about-me {
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .caption-blog {
+    font-size: 1.4vw;
+  }
+  .text-about {
+    padding-top: 1em !important;
+  }
+}
+
 @media (max-width: 790px) {
   .pencari {
     visibility: hidden;
+  }
+  #carouselExampleCaptions {
+    width: 100% !important;
   }
 }
 @media (max-width: 321px) {
@@ -16,6 +34,35 @@
     font-size: 25px;
   }
 }
+@media screen and (max-width: 550px) {
+  /* Project */
+  .latihan1,
+  .latihan2 {
+    top: 2em;
+    padding: 0.5em;
+    border-radius: 10px;
+    font-size: 2.5vw !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  nav .navbar-brand {
+    visibility: hidden;
+  }
+  nav button.icon-klik {
+    box-shadow: 0 0 3px black !important;
+    position: relative;
+    top: 0.8em;
+    width: 100%;
+  }
+  .menu-blog,
+  .menu-view {
+    width: 100% !important;
+  }
+  .menu-main {
+    text-align: center;
+  }
+}
+
 /* Gambar */
 
 #bayangan:hover {
@@ -37,9 +84,6 @@
 }
 .utama-about-me {
   font-family: "Poppins", sans-serif;
-}
-.text-about-me1 {
-  font-size: 22px !important;
 }
 #projects {
   background-color: #e2edff;
