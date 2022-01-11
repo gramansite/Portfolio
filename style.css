@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
 
 * {
   padding: 0;
@@ -83,11 +83,13 @@
   box-shadow: 300px 45px 300px 9px aqua;
 }
 .utama-about-me {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 #projects {
+  height: 100vh;
   background-color: #e2edff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  overflow-y: scroll;
 }
 #projects .card-text {
   font-size: 16px !important;
@@ -100,10 +102,7 @@
 }
 .caption-blog {
   color: white !important;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.8)
-  ) !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) !important;
   width: fit-content;
   margin: auto;
   padding: 0.3em;
@@ -125,5 +124,5 @@ section {
   left: 1.8em;
   font-size: 16px;
   font-weight: bold;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
